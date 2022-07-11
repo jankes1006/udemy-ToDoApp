@@ -1,6 +1,9 @@
 package com.janek.todoapp.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -10,7 +13,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "tasks")
+@Table(name = "TASKS")
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
