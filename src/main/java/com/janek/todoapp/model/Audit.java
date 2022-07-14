@@ -2,14 +2,14 @@ package com.janek.todoapp.model;
 
 import lombok.Data;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Embeddable;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import java.time.LocalDateTime;
 
-@MappedSuperclass
+@Embeddable
 @Data
-public class BaseAuditableEntity {
+class Audit {
     private LocalDateTime createdOn;
     private LocalDateTime updateOn;
 
